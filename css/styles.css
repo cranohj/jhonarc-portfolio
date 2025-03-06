@@ -1,0 +1,209 @@
+/* Minimalistic CSS for Jhonarc Portfolio */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+	margin-top: 110px; /* Para hindi matakpan ng fixed nav */
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #a7e9ef; /* Changed to light cyan for a fresh look */
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+a:hover {
+    background: #a7e9ef;
+    text-decoration: none;
+	color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background: #007bff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background: #007bff;
+    color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 2px;
+    display: none;
+}
+
+
+/* Dark mode styling for using js */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header, 
+.dark-mode section, 
+.dark-mode footer {
+    background-color: #444;
+}
+
+.dark-mode nav {
+    background: #0056b3;
+}
+
+.dark-mode a {
+    background-color: #a7e9ef;
+    color: #333;
+}
+
+button#darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#darkModeToggle:hover {
+    background: #0056b3;
+}
+
+/* Back to top button using .js */
+#backToTop {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    padding: 10px;
+    display: none;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	margin-bottom: 10px;
+}
+#backToTop:hover {
+    background: #0056b3;
+}
